@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,60 @@
   to {
     transform: rotate(360deg);
   }
+} */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+}
+.App {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  
+  
+  
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.user-details {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-details:hover{
+  border: 1px solid #ddd;
+  transform: scale(1.05);
+}
+
+.user-details h2{
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-details p{
+  color: #666;
+  line-height: 1.6;
 }
